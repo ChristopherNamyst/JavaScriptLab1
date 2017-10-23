@@ -24,24 +24,19 @@ while (player1 > 0 && grantChirpus > 0 && gamesPlayed < 3) {
     console.log("The Chirpinator's Score is " + grantChirpus);
     console.log(userName + ", Your Score is " + player1);
    
-    if (grantChirpus <= 0) {
-        gamesPlayed ++;
+    if (grantChirpus <= 0 && player1 > 0) {
+        gamesPlayed += 1;
         console.log("Lets Play Again!");
         if (gamesPlayed < 3) {
             grantChirpus = 10;
         }
-        if (gamesPlayed >= 3 && grantChirpus <= 0 && player1 >= 0) {
+        if (gamesPlayed === 3 && grantChirpus <= 0 && player1 > 0) {
             console.log("THE ALMIGHTY GRANT HAS WON!!");
-        } else if (gamesPlayed >= 3 && grantChirpus >= 0 && player1 <= 0) {
+        } else if (gamesPlayed === 3 && grantChirpus > 0 && player1 <= 0) {
             console.log("CONGRATS " + userName + " YOU HAVE WON!!");
 
             }
-     
-    
-    }
-    
-    
-    
+     }
     
 }
     
