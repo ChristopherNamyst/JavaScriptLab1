@@ -27,22 +27,25 @@ function startGame(){
 function startCombat(){
     
     while(player1 > 0 && grantChirpus > 0 && gamesPlayed < 3){
-        var playAgain = prompt("Would you like to ATTACK!!! or Quit?");
-        if(playAgain === "attack"){
+        
+        if(prompt("Would you like to ATTACK!!! or Quit?")=== "attack"){
             
             player1 = getDamage();
             grantChirpus = getDamage();
-            console.log(playerName + ", You currently have " + player1 + " points!");
+            console.log("You currently have " + player1 + " points!");
             console.log("The Almighty Grant has " + grantChirpus + " points!");
             
             if(player1 <= 0 && play > 0) {
                 gamesPlayed += 1
                 console.log("On to the next round!");
-                if (gamesPlayed < 3) {
-                    player1 = 10;
-                }
             }
-            else if (playAgain === "quit")  {
+            if (gamesPlayed < 3) {
+                    player1 = 10;
+                
+            }
+            
+        }
+            else {
             console.log("Goodbye! Have a Great Day!!!")
             break;
 
@@ -52,16 +55,10 @@ function startCombat(){
             console.log("The Almight Grant Has Won Again!!! Muwhahahaha");
         } 
             else if (player1 <= 0 && player1 > 0 && gamesPlayed === 3) {
-            console.log("Congrats! " + playerName + " , You Have Won!!!!")
+            console.log("Congrats! You Have Won!!!!")
             }  
-            else if (playAgain === "quit")  {
-            console.log("Goodbye! Have a Great Day!!!")
-            break;
-
-            }
             
-            
-        }
+        
         
     }
     
