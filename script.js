@@ -1,8 +1,6 @@
-var player1 = 40;
+/*var player1 = 40;
 var grantChirpus = 10;
 var gamesPlayed = 0;
-
-
 
 
 //start with a greeting to potential player
@@ -11,7 +9,7 @@ var greeting = prompt("Hello, Do You Think You Can Beat THE ALMIGHTY GRANT? Plea
 //ask user for their name
 if (greeting === "1") {
     var userName = prompt("OK, please tell me your name").toUpperCase();
-    var startGame = prompt("Thanks " + userName + "!! To Start, Please Press ENTER.");
+    var startGreeting = prompt("Thanks " + userName + "!! To Start, Please Press ENTER.");
 } else {
     var goodBye = prompt("Have A Great Day!!");
 }
