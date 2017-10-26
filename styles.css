@@ -1,0 +1,30 @@
+body{
+    background-color: rgba(190, 217, 249, 1);
+}
+
+button{
+    background-color:grey;
+    color:bisque;
+    border-color: black;
+    border-bottom-style: groove;
+}
+
+div {
+    display: block;
+    text-align: center;
+}
+
+#firstPage{
+    display: contents;
+    border: 5px solid black;
+    
+    
+}
+
+.secondPage{
+    
+    display: contents;
+    border: 5px solid black;
+}
+
+

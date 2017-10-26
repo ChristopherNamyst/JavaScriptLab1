@@ -3,7 +3,7 @@
 
 
 
-var player1 = 40;
+/*var player1 = 40;
 var grantChirpus = 10;
 var gamesPlayed = 0;
 
@@ -16,7 +16,7 @@ function startGame(){
     if(greeting === "yes"){
         var playerName = prompt("Please type in your name.").toUpperCase();
         console.log("Ok " + playerName + "Lets Boogie!");
-        startCombat();
+        
     }
 }
 
